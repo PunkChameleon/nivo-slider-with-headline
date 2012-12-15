@@ -84,32 +84,6 @@
 .nivo-html-caption {
     display:none;
 }
-
-/* Nivo Headline Styles */
-
-.nivo-headline {
-    position: absolute;
-    top:10px;
-    width:100%;
-    height:30px;
-    z-index:999;
-    color:white;
-    font-size:20px;
-    font-weight:bold;
-    background: black;
-    color: white;
-    width: 100%;
-    z-index: 8;
-    padding: 5px 35px 5px 25px;
-    opacity: 0.6;
-    overflow: hidden;
-    -moz-opacity: 0.6;
-    filter: alpha(opacity=6);
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.nivo
 /* Direction nav styles (e.g. Next & Prev) */
 .nivo-directionNav a {
 	position:absolute;

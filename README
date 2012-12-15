@@ -1,1 +1,7 @@
-Nivo Slider is "The Most Awesome jQuery Image Slider". See http://nivo.dev7studios.com for more info.
+This humble slider project is a fork of the amazing Nivo Slider (http://nivo.dev7studios.com). It simply adds the functionality to easily add a 'headline' to each slide in addition to the nivo caption.
+
+In order to utilize it, all you have to do is add the attribute "headline" into the slider image, and give it the value of the text you want in the headline.
+
+The styles can be altered easily in the '.nivo-headline' class in the css file.
+
+As it stands, this is just a very simple fork that I think some other developers out there would be interested in. If you want to contribute in any way, you are welcome to! Just make a pull request or get in touch and I'd love to expand on this germ of an idea.

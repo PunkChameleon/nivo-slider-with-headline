@@ -87,32 +87,6 @@
             $('.nivo-box').remove();
         });
 
-		//Create Headline
-		slider.append($('<div class="nivo-headline"></div>'));
-		
-		// Process Headline Caption function
-        var processHeadlineCaption = function(settings){
-            var nivoHeadlineCaption = $('.nivo-headline', slider);
-            if(vars.currentImage.attr('headline') != '' && vars.currentImage.attr('headline') != undefined){
-                var titleHeadline = vars.currentImage.attr('headline');
-                if(titleHeadline.substr(0,1) == '#') titleHeadline = $(titleHeadline).html();   
-
-                if(nivoHeadlineCaption.css('display') == 'block'){
-                    setTimeout(function(){
-                        nivoHeadlineCaption.html(titleHeadline);
-                    }, settings.animSpeed);
-                } else {
-                    nivoHeadlineCaption.html(titleHeadline);
-                    nivoHeadlineCaption.stop().fadeIn(settings.animSpeed);
-                }
-            } else {
-                nivoHeadlineCaption.stop().fadeOut(settings.animSpeed);
-            }
-        }
-        
-        //Process initial Headline caption
-        processHeadlineCaption(settings);
-
         //Create caption
         slider.append($('<div class="nivo-caption"></div>'));
         
@@ -358,9 +332,6 @@
                 $('a', vars.controlNavEl).removeClass('active');
                 $('a:eq('+ vars.currentSlide +')', vars.controlNavEl).addClass('active');
             }
-
-			//Process initial Headline caption
-	        processHeadlineCaption(settings);
             
             // Process caption
             processCaption(settings);            
